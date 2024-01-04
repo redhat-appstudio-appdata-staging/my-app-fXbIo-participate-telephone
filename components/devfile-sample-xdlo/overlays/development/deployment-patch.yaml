@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xdlo
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/beaumorley-tenant/my-app/devfile-sample-xdlo@sha256:4a2d099fcca1d7777076bb51cd71d09d8cceb9ae27cc74bbbd2ac9e3bee3fc9d
+        name: my-nodejs
+        resources: {}
+status: {}
