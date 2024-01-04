@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hzam
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/beaumorley-tenant/my-app/devfile-sample-hzam@sha256:119879b3d997da5c260c3b9d442ee242dd7e9fa44948766bbd7ac590a222d8a1
+        name: my-nodejs
+        resources: {}
+status: {}
