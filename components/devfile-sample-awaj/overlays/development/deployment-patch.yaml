@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-awaj
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/beaumorley-tenant/my-app/devfile-sample-awaj@sha256:93ac5767747976c2caade46930973559c84c44074843c6e911c66ad1f9f5e58c
+        name: my-nodejs
+        resources: {}
+status: {}
